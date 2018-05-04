@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from rest_framework import viewsets
-from rest_framework.views import APIView
+
 from contacts.models import Contact
 import pdb
 
@@ -14,7 +14,7 @@ class ContactSerializer(serializers.ModelSerializer):
 
 # Create your views here.
 
-class ContactViewSet(APIView):
+class ContactViewSet(viewsets.ModelViewSet):
 	queryset = Contact.objects.all()
 	
 	serializer_class = ContactSerializer
