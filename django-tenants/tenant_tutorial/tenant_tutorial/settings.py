@@ -162,7 +162,7 @@ TENANT_APPS = (
     'django.contrib.admin',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'tenant_only',
+    
     
     
 )
